@@ -38,4 +38,4 @@ They say that every hero needs a villain. Let's add an Enemy sprite to our game 
 * __Health__
 * __Visual representation of the Enemy__
 * __A custom block to change the Hero's health__
-* * __Visual representation of when the Enemy touches the Hero__
+* __Visual representation of when the Enemy touches the Hero__
