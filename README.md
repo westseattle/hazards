@@ -24,7 +24,7 @@ You should notice that your character keeps falling. Since the Hero never reache
 
 <img src="check_boundaries.png" />
 
-#### Death
+#### Keeping Track of Death
 
 Will want to keep track of the player's lives. At the beginning of the game, lets create a variable to store the number of lives. Each time the player dies, we can broadcast a message to subtract a life. One variable that keeps track of a player's health, let's say the player has a health bar with 3 hearts. Lose all hearts, you lose a life. 
 
