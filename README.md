@@ -18,6 +18,16 @@ A common stationary hazard is a pit that the Hero must jump over. Failing to cle
 
 We have already coded logic to make the Hero fall until reaching the ground. So if we erase the ground, our Hero should keep falling. Try this out now.
 
+Key pieces:
+
+Get rid of forever loop, repeat until dead
+
+Game started
+Life started
+Add boundary check to falling code
+Add number of lives check after death
+Add block to initialize life
+
 You should notice that your character keeps falling. Since the Hero never reaches the ground, you are stuck in a repeat loop.
 
 * __Lives__ - the number of lives will be a variable that stores a number. At the beginning of the game, we can initialize this variable with the number of starting lives in our game. For now, let's choose 3.
