@@ -20,12 +20,18 @@ We have already coded logic to make the Hero fall until reaching the ground. So 
 
 Key pieces:
 
-Get rid of forever loop, repeat until dead
+Get rid of forever loop
+
+Repeat until dead, in main loop and falling loop
 
 Game started
+
 Life started
+
 Add boundary check to falling code
+
 Add number of lives check after death
+
 Add block to initialize life
 
 You should notice that your character keeps falling. Since the Hero never reaches the ground, you are stuck in a repeat loop.
