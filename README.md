@@ -42,13 +42,6 @@ When the player dies, we will want to subtract one from the number of lives. Why
 
 <img src="lives_check.png" />
 
-
-* Check boundaries block that subtracts lives when off stage. This boundary check must happen at the right place, can have just a block for falling. Off stage -> subtract a life. Will keep subtracting lives unless you have a way to start the level again at beginning. Good to have a custom block for starting the level again with one less life.
-
-Lives Sprite -> Change costume when receive player died message
-Health Sprite -> Change costume when receive player lost health message. How much health? Custom block. Different things make the player lose different amounts of health, so input can vary. Healthbar 100 in increments.
-Health sprite should also check if health <= 0, then can broadcast death/change life.
-
 ### Adding a Moving Enemy
 
 Let's add an Enemy sprite to our game that will cause damage to our hero. This enemy won't be able to kill the Hero with one touch, but will cause the Hero to lose health.
