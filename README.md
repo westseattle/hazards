@@ -67,8 +67,15 @@ To animate the enemy, add a short script with a forever loop that changes costum
 
 <img src="enemy_script.png" />
 
-* __Enemy Attacks__ - When the Enemy touches the Hero, the hero should change costumes to show the attack visually. Maybe the attack injures the Hero permanently. 
-* __Adding a Health Meter__ - When the Enemy touches the Hero, the hero should lose health. This should be indicated by a Health sprite. Multiple costumes for each health status.
+When the Enemy sprite touches the Hero Sprite, we will want to subtract health points from the Hero. Let's create a custom block called "Change Health" that changes the Hero's health, and call the custom block when the Enemy sprite touches the Hero.
+
+<img src="change_health.png" />
+
+When the Enemy touches the Hero, the hero should also change costumes or bounce backwards to show the attack's effects visually. This will be left as an exercise for you.
+
+#### Creating a Health Meter
+
+When the Enemy touches the Hero, the hero loses health. In most games, there is a visual indicator of the amount of health that the Hero has remaining. You can create a health meter by creating a new sprite with different costumes that change based on the amount of health the player has remaining. When the player is injured, you should broadcast a message to the health meter so that it knows when to change costumes. Here are some costumes that can be used for a health meter and a script that updates the health meter when a message is received:
 
 ![Health 100](./health100.png)
 
@@ -77,3 +84,5 @@ To animate the enemy, add a short script with a forever loop that changes costum
 ![Health 50](./health50.png)
 
 ![Health 25](./health25.png)
+
+<img src="health_script.png" />
