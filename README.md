@@ -1,12 +1,12 @@
 # Adding Hazards to Your Platform Game
 
-So....you made a character that can jump around. That's great and all, but every good story has some conflict and every Hero needs a Villain. In this lesson, we will learn how to create multiple **hazards** that cause harm to the Hero. We will create a pit for the player to fall into, a moving enemy, a way to keep track of lives, and a meter to display the Hero's health.
+So....you made a character that can jump around. That's great and all, but every story needs some conflict and every Hero needs a villain. In this lesson, we will learn how to create multiple **hazards** that cause harm to the Hero. We will create a pit that the Hero can fall into and a moving attacker. To display the player's status, we will create a variable to track the number of lives remaining and a meter to display the Hero's health.
 
-## The Importance of Abstraction
+## A Note on Abstraction
 
-Examples of hazards include Koopa Troopas, lava pits, falling rocks, spikes, knives, bullets, and fire breathing dragons. 
+There are many different kinds of hazards: Koopa Troopas, lava pits, falling rocks, spikes, knives, bullets, fire breathing dragons, and any other enemy you can imagine. Even though all of these hazards are different, they share certain characteristics. It is important to combine common characteristics into blocks to make our code simpler and reduce duplication. 
 
-We learned about the concept of **abstraction** when discussing custom block commands and reporters. Custom blocks allow you to combine multiple commands into a single named block of code. If you write your entire game in a straight line, it will get very long and complicated. If you find that making a simple change to your game logic involves changing the same value in multiple places. Or if it is hard to find a section of your program. Think if a book had no chapters, paragraphs, or indentations. It would just be a big wall of text. A good program should be divided into named sections that make it easy to follow. 
+We learned about the concept of **abstraction** when discussing custom command blocks and reporters. Custom blocks allow you to combine multiple commands into a single named block of code. If you write your entire game in a straight line, it will get very long and complicated. If you find that making a simple change to your game logic involves changing the same value in many places, chances are you can **refactor** your code to reduce duplication. If it is hard to find a particular piece of logic when asked, chances are your program can be simplified to make it easier to read. Think about reading a book that has no chapters, paragraphs, or indentation: It would just be a big wall of text. A good program should be divided into named sections that make it easy to read and debug.
 
 We will create a couple of custom blocks when dealing with hazards and powerups. Since each of these will affect the Hero sprite. 
 
