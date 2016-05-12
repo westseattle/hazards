@@ -34,8 +34,6 @@ Health sprite should also check if health <= 0, then can broadcast death/change 
 ### Running into an Moving Enemy
 
 They say that every hero needs a villain. Let's add an Enemy sprite to our game that will cause damage to our hero. 
-
-* __Health__
-* __Visual representation of the Enemy__
-* __A custom block to change the Hero's health__
-* __Visual representation of when the Enemy touches the Hero__
+* __Enemy Sprite__ - You should create a new Sprite and name it "Enemy". The Enemy sprite should have one or more costumes. For this example, the enemy will be a large cat. Right click and save the following set of images to a folder, then drag them to the costumes tab in Snap. Add a short script with a forever loop that changes costumes every 0.1 seconds to make the Enemy sprite appear in motion. Add a block to set the Enemy sprite's starting X-Y position. Add a block to make the Enemy move towards the Hero as it changes costumes. See the script below.
+* __Enemy Attacks__ - When the Enemy touches the Hero, the hero should change costumes to show the attack visually. Maybe the attack injures the Hero permanently. 
+* __Adding a Health Meter__ - When the Enemy touches the Hero, the hero should lose health. This should be indicated by a Health sprite. Multiple costumes for each health status.
