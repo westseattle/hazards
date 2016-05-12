@@ -65,8 +65,11 @@ Create a new Sprite in Snap and name it "Enemy". The Enemy sprite should have on
 
 * __Enemy Attacks__ - When the Enemy touches the Hero, the hero should change costumes to show the attack visually. Maybe the attack injures the Hero permanently. 
 * __Adding a Health Meter__ - When the Enemy touches the Hero, the hero should lose health. This should be indicated by a Health sprite. Multiple costumes for each health status.
-* 
-![Cat 2](./health100.png)
-![Cat 3](./health75.png)
-![Cat 4](./health50.png)
-![Cat 5](./health25.png)
+
+![Health 100](./health100.png)
+
+![Health 75](./health75.png)
+
+![Health 50](./health50.png)
+
+![Health 25](./health25.png)
