@@ -1,10 +1,12 @@
 # Adding Hazards to Your Platform Game
 
-So you have a character jumping around. That isn't very interesting. The Hero needs some enemies, some hazards. How would we make a pit for the Hero to fall into? 
+So....you made a character that can jump around. That's great and all, but every good story has some conflict and every Hero needs a Villain. In this lesson, we will learn how to create multiple **hazards** that cause harm to the Hero. We will create a pit for the player to fall into, a moving enemy, a way to keep track of lives, and a meter to display the Hero's health.
 
 ## The Importance of Abstraction
 
-We learned about the concept of abstraction when discussing custom block commands and reporters. Custom blocks allow you to combine multiple steps into a single named block of code. If you write your entire game in a straight line, it will get very long and complicated. If you find that making a simple change to your game logic involves changing the same value in multiple places. Or if it is hard to find a section of your program. Think if a book had no chapters, paragraphs, or indentations. It would just be a big wall of text. A good program should be divided into named sections that make it easy to follow. 
+Examples of hazards include Koopa Troopas, lava pits, falling rocks, spikes, knives, bullets, and fire breathing dragons. 
+
+We learned about the concept of **abstraction** when discussing custom block commands and reporters. Custom blocks allow you to combine multiple commands into a single named block of code. If you write your entire game in a straight line, it will get very long and complicated. If you find that making a simple change to your game logic involves changing the same value in multiple places. Or if it is hard to find a section of your program. Think if a book had no chapters, paragraphs, or indentations. It would just be a big wall of text. A good program should be divided into named sections that make it easy to follow. 
 
 We will create a couple of custom blocks when dealing with hazards and powerups. Since each of these will affect the Hero sprite. 
 
@@ -12,7 +14,7 @@ Pretend you have 10 different powerups and 10 different hazards. Some of these p
 
 ## Hazards
 
-Hazards are objects, sprites, or positions in the game that cause harm to the Hero. Examples of hazards include Koopa Troopas, lava pits, falling rocks, spikes, knives, bullets, and fire breathing dragons. The level of harm done depends on how you design the hazard. You may decide that falling into a pit costs the Hero a life whereas landing on a spike subtracts 10 "health points". 
+ The level of harm done depends on how you design the hazard. You may decide that falling into a pit costs the Hero a life whereas landing on a spike subtracts 10 "health points". 
 
 Let's create some sprites, variables, and custom blocks for dealing with hazards. 
 
@@ -34,6 +36,10 @@ Health sprite should also check if health <= 0, then can broadcast death/change 
 ### Running into an Moving Enemy
 
 They say that every hero needs a villain. Let's add an Enemy sprite to our game that will cause damage to our hero. 
-* __Enemy Sprite__ - You should create a new Sprite and name it "Enemy". The Enemy sprite should have one or more costumes. For this example, the enemy will be a large cat. Right click and save the following set of images to a folder, then drag them to the costumes tab in Snap. Add a short script with a forever loop that changes costumes every 0.1 seconds to make the Enemy sprite appear in motion. Add a block to set the Enemy sprite's starting X-Y position. Add a block to make the Enemy move towards the Hero as it changes costumes. See the script below.
+
+#### Creating an Enemy Sprite
+
+Create a new Sprite in Snap and name it "Enemy". The Enemy sprite should have one or more costumes. For this example, the enemy will be a large cat. Right click and save the following set of images to a folder, then drag them to the costumes tab in Snap. Add a short script with a forever loop that changes costumes every 0.1 seconds to make the Enemy sprite appear in motion. Add a block to set the Enemy sprite's starting X-Y position. Add a block to make the Enemy move towards the Hero as it changes costumes. See the script below.
+ 
 * __Enemy Attacks__ - When the Enemy touches the Hero, the hero should change costumes to show the attack visually. Maybe the attack injures the Hero permanently. 
 * __Adding a Health Meter__ - When the Enemy touches the Hero, the hero should lose health. This should be indicated by a Health sprite. Multiple costumes for each health status.
