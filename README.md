@@ -38,14 +38,12 @@ When the player dies, we will want to subtract one from the number of lives. Why
 
 <img src="start_game_start_life.png" />
 
-<img src="intialize_life.png" />
+<img src="initialize_life.png" />
 
 <img src="lives_check.png" />
 
 
 * Check boundaries block that subtracts lives when off stage. This boundary check must happen at the right place, can have just a block for falling. Off stage -> subtract a life. Will keep subtracting lives unless you have a way to start the level again at beginning. Good to have a custom block for starting the level again with one less life.
-
-
 
 Lives Sprite -> Change costume when receive player died message
 Health Sprite -> Change costume when receive player lost health message. How much health? Custom block. Different things make the player lose different amounts of health, so input can vary. Healthbar 100 in increments.
