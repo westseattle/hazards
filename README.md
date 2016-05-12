@@ -8,23 +8,11 @@ There are many different kinds of hazards: Koopa Troopas, lava pits, falling roc
 
 We learned about the concept of **abstraction** when discussing custom command blocks and reporters. Custom blocks allow you to combine multiple commands into a single named block of code. If you write your entire game in a straight line, it will get very long and complicated. If you find that making a simple change to your game logic involves changing the same value in many places, chances are you can **refactor** your code to reduce duplication. If it is hard to find a particular piece of logic when asked, chances are your program can be simplified to make it easier to read. Think about reading a book that has no chapters, paragraphs, or indentation: It would just be a big wall of text. A good program should be divided into named sections that make it easy to read and debug.
 
-We will create a couple of custom blocks when dealing with hazards and powerups. Since each of these will affect the Hero sprite. 
-
-Pretend you have 10 different powerups and 10 different hazards. Some of these probably have something in common that can be encapsulated into a custom block. For instance, a health powerup and an enemy collision both change the Hero's health. Falling into a lava pit and touching a "1-up" both change the number of lives a player has remaining, even if they change it in opposite ways. 
-
-## Hazards
-
- The level of harm done depends on how you design the hazard. You may decide that falling into a pit costs the Hero a life whereas landing on a spike subtracts 10 "health points". 
-
-Let's create some sprites, variables, and custom blocks for dealing with hazards. 
+Let's consider a game with 10 different hazards and 10 different powerups. Many of them probably share some common characteristics. For instance, a health powerup and an enemy attack both change the Hero's health. So we may want to create a custom block for managing the Hero's health. We may also want a custom block for changing the number of lives a player has remaining. Falling into a lava pit and touching a "1-up" both change the number of lives a player has remaining, even if they change it in opposite ways. 
 
 ### Falling into a Pit
 
 A common stationary hazard is a pit that the Hero must jump over. Failing to clear the pit results in the loss of life. Easy enough. We need to keep track of the following:
-
-Mistake #1
-Mistake #2
-Mistake #3
 
 * __Lives__ - the number of lives will be a variable that stores a number. At the beginning of the game, we can initialize this variable with the number of starting lives in our game. For now, let's choose 3.
 * __Visual representaton of the pit__ - this will just be a hole in the ground. Simply erase a chunk of the ground so that gravity will make the player fall off the screen under certain conditions. If the player's X and Y positions are within the boundaries of the pit, the player won't reach the ground on the other side. 
