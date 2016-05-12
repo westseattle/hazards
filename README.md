@@ -49,19 +49,23 @@ Lives Sprite -> Change costume when receive player died message
 Health Sprite -> Change costume when receive player lost health message. How much health? Custom block. Different things make the player lose different amounts of health, so input can vary. Healthbar 100 in increments.
 Health sprite should also check if health <= 0, then can broadcast death/change life.
 
-### Running into an Moving Enemy
+### Adding a Moving Enemy
 
-They say that every hero needs a villain. Let's add an Enemy sprite to our game that will cause damage to our hero. 
+Let's add an Enemy sprite to our game that will cause damage to our hero. This enemy won't be able to kill the Hero with one touch, but will cause the Hero to lose health.
 
 #### Creating an Enemy Sprite
 
-Create a new Sprite in Snap and name it "Enemy". The Enemy sprite should have one or more costumes. For this example, the enemy will be a large cat. Right click and save the following set of images to a folder, then drag them to the costumes tab in Snap. Add a short script with a forever loop that changes costumes every 0.1 seconds to make the Enemy sprite appear in motion. Add a block to set the Enemy sprite's starting X-Y position. Add a block to make the Enemy move towards the Hero as it changes costumes. See the script below.
+Create a new Sprite in Snap and name it "Enemy". The Enemy sprite should have one or more costumes. For this example, the enemy will be a large cat. Right click and save the following set of images to a folder, then drag them to the costumes tab in Snap. 
  
 ![Cat 1](./cat1.png)
 ![Cat 2](./cat2.png)
 ![Cat 3](./cat3.png)
 ![Cat 4](./cat4.png)
 ![Cat 5](./cat5.png)
+
+To animate the enemy, add a short script with a forever loop that changes costumes every 0.1 seconds to make the Enemy sprite appear in motion. Add a "go to X-Y" block to set the Enemy sprite's starting X-Y position to the right side of the stage. Then add a motion block to make the Enemy move towards the Hero as it changes costumes. See the example script below.
+
+<img src="enemy_script.png" />
 
 * __Enemy Attacks__ - When the Enemy touches the Hero, the hero should change costumes to show the attack visually. Maybe the attack injures the Hero permanently. 
 * __Adding a Health Meter__ - When the Enemy touches the Hero, the hero should lose health. This should be indicated by a Health sprite. Multiple costumes for each health status.
